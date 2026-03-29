@@ -1,0 +1,419 @@
+/* ========== RESET & CƠ BẢN ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #0a0a0a;
+    line-height: 1.5;
+}
+
+/* ========== PHẦN HERO ========== */
+.hero {
+    padding: 96px 72px 48px;
+    background: linear-gradient(166deg, #f9fafb 0%, #f3f4f6 100%);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.badge {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    color: #495565;
+    font-size: 16px;
+    margin-bottom: 32px;
+    max-width: 512px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-dark {
+    background: #000;
+    color: #fff;
+}
+
+.btn-outline {
+    background: #fff;
+    border: 1px solid #000;
+    color: #0a0a0a;
+}
+
+.stats {
+    display: flex;
+    gap: 40px;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats strong {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.stats span {
+    color: #495565;
+    font-size: 14px;
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+}
+
+.image-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    filter: blur(32px);
+    background: linear-gradient(162deg, #51a2ff, #c27aff);
+    opacity: 0.3;
+}
+
+.shoe-img {
+    width: 100%;
+    border-radius: 24px;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+    display: block;
+}
+
+/* ========== PHẦN TÍNH NĂNG ========== */
+.features {
+    padding: 64px 72px;
+    background: #f8fafb;
+}
+
+.features-container {
+    display: flex;
+    gap: 32px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    flex: 1;
+    background: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.icon-circle {
+    width: 64px;
+    height: 64px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.feature-card h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    color: #495565;
+    font-size: 13px;
+}
+
+/* ========== PHẦN SẢN PHẨM ========== */
+.products {
+    padding: 64px 72px;
+    background: #fff;
+}
+
+.products-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 16px;
+}
+
+.section-desc {
+    text-align: center;
+    color: #495565;
+    margin-bottom: 48px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 24px;
+}
+
+.product-card {
+    flex: 1;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.product-img {
+    position: relative;
+    height: 256px;
+    background-color: #f2f4f6;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-tag {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: #000;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 13px;
+}
+
+.wishlist {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #fff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.product-info {
+    padding: 16px;
+}
+
+.rating {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #697282;
+}
+
+.product-info h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.btn-add {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* ========== PHẦN DANH MỤC ========== */
+.categories {
+    padding: 64px 72px;
+    background: #fff;
+}
+
+.categories-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.category-grid {
+    display: flex;
+    gap: 24px;
+}
+
+.category-card {
+    flex: 1;
+    height: 320px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.7), transparent);
+    color: #fff;
+}
+
+.category-overlay h3 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.category-overlay p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    background: #000;
+    padding: 48px 72px;
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.footer-row {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.footer-brand {
+    flex: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.logo span {
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.footer-brand p {
+    color: #99a1ae;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    flex: 1;
+}
+
+.footer-links h4 {
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    color: #99a1ae;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #99a1ae;
+    font-size: 14px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+    .hero, .features, .products, .categories, .footer {
+        padding: 48px 24px;
+    }
+    
+    .hero-container, .features-container, .product-grid, .category-grid, .footer-row {
+        flex-direction: column;
+    }
+    
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .stats {
+        flex-wrap: wrap;
+    }
+}
